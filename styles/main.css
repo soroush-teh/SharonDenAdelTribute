@@ -1,0 +1,430 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+details {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url("../images/bg-all.jpg") repeat-y;
+}
+
+.top-container {
+  min-height: 800px;
+  background: url(../images/bg.jpg) no-repeat top center;
+  background-size: cover;
+  position: relative;
+}
+
+.top-container .titles-container {
+  position: absolute;
+  top: 10px;
+  right: 130px;
+  width: 900px;
+  min-height: 250px;
+}
+
+.top-container .titles-container h1 {
+  color: black;
+  font-family: Yellowtail , Cursive;
+  font-size: 120px;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.top-container .titles-container h3 {
+  font-family: 'Poiret One', arial;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -90px;
+  margin-right: 100px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.top-container .titles-container h5 {
+  font-family: 'Poiret One', arial;
+  font-size: 22px;
+  margin-top: -5px;
+  text-align: center;
+  margin-right: 140px;
+}
+
+.bio-container {
+  width: 85%;
+  min-height: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.bio-container .biography {
+  font-family: Yellowtail , Cursive;
+  margin-left: 150px;
+  font-size: 72px;
+  text-align: left;
+  letter-spacing: 30px;
+}
+
+.bio-container .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bio-container .content {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 15px;
+  margin-right: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bio-container .content h2 {
+  font-family: Yellowtail , Cursive;
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.bio-container .content p {
+  font-family: sans-serif;
+  font-size: 22px;
+  text-align: left;
+  line-height: 136%;
+}
+
+.bio-container .content img {
+  margin-bottom: 10px;
+}
+
+.bio-container .aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bio-container .aside .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bio-container .aside .socials img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 65px;
+}
+
+.bio-container .aside .music audio {
+  width: 100%;
+}
+
+.bio-container .aside > * {
+  margin-top: 25px;
+}
+
+.bio-container h2 {
+  font-family: Yellowtail , Cursive;
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin-top: 50px !important;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.bio-container p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.discography {
+  max-width: 1600px;
+  min-height: 900px;
+  background: url("../images/wt1.jpg") repeat-y fixed;
+  background-size: cover;
+}
+
+.discography-title {
+  font-family: Yellowtail , Cursive;
+  font-size: 120px;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.discography-content {
+  width: 85%;
+  margin: 0 auto;
+  min-height: 900px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  color: white;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discography-content em {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.discography-content details {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.discography-content details li {
+  margin-top: 15px;
+  margin-left: 30px;
+  list-style: none inside url("../images/music.png");
+}
+
+.discography-content details li a {
+  color: white;
+}
+
+.discography-content-wt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.discography-content-indigo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.designer {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  display: block;
+  padding: 15px;
+}
+
+.designer strong {
+  color: red;
+  font-size: 24px;
+}
+
+.designer a {
+  color: white;
+}
+
+@media screen and (max-width: 1350px) {
+  .titles-container {
+    right: 20px !important;
+    width: 800px !important;
+  }
+  .top-container {
+    background-size: cover;
+    background-position: left top;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .titles-container {
+    right: 0px !important;
+  }
+  .titles-container h1 {
+    font-size: 110px !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .titles-container {
+    width: 700px !important;
+  }
+  .titles-container h1 {
+    font-size: 95px !important;
+  }
+  .bio-container {
+    width: 100%;
+  }
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .flex-container .content, .flex-container .aside {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+  .aside img {
+    display: block;
+    margin: 25px auto;
+  }
+  .biography {
+    text-align: center !important;
+    margin: 30px auto !important;
+  }
+  .discography .discography-title {
+    font-size: 90px !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .discography {
+    background-position: center center;
+  }
+  .top-container {
+    background-size: cover;
+    background-position: left top;
+  }
+  .titles-container {
+    width: 600px !important;
+  }
+  .titles-container h1 {
+    font-size: 70px !important;
+    text-align: center;
+  }
+  .titles-container h3 {
+    margin-top: -55px !important;
+    font-size: 20px !important;
+    position: relative;
+    left: 6vw;
+  }
+  .titles-container h5 {
+    font-size: 20px !important;
+    position: relative;
+    left: 7vw;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .titles-container {
+    background: rgba(255, 255, 255, 0.5);
+    width: 90% !important;
+    top: 250px !important;
+    right: 5vw !important;
+  }
+  .titles-container h3 {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .titles-container h3 {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .biography {
+    font-size: 50px !important;
+  }
+  .discography .discography-title {
+    font-size: 75px !important;
+  }
+  .discography .discography-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .titles-container h3 {
+    margin-left: 50px;
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .biography {
+    font-size: 40px !important;
+    letter-spacing: 10px !important;
+  }
+  .content h2 {
+    font-size: 40px !important;
+    letter-spacing: 5px !important;
+  }
+  .titles-container h1 {
+    font-size: 60px !important;
+  }
+  .titles-container h3 {
+    font-size: 13px !important;
+    position: relative;
+    top: 22px;
+  }
+  .titles-container h5 {
+    position: relative;
+    top: 30px;
+    left: 50px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .titles-container h1 {
+    font-size: 55px !important;
+  }
+  .biography {
+    font-size: 35px !important;
+  }
+  .aside .socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aside .socials img {
+    margin: 25px auto !important;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .titles-container h1 {
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .titles-container h1 {
+    font-size: 45px !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

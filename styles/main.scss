@@ -1,0 +1,256 @@
+@mixin myheading {
+    font-family: Yellowtail , Cursive;
+    
+    
+    
+    
+}
+
+html{box-sizing: border-box; margin:0;}                   
+*, *::before, *::after {box-sizing: inherit;}
+body{
+  
+    margin:0 auto;
+    
+}
+img{
+    max-width:100%;
+}
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style:none;
+}
+details{
+    cursor:pointer;
+    background:rgba(0,0,0,0.3);
+    padding:10px;
+    border-radius:10px;
+}
+.wrapper{
+    max-width:1600px;
+    margin:0 auto;
+    background:url('../images/bg-all.jpg') repeat-y;
+}
+
+.top-container{
+    
+    min-height:800px;
+    background: url(../images/bg.jpg) no-repeat top center;
+    background-size:cover;
+    position:relative;
+
+    .titles-container{
+       
+       position:absolute;
+       
+       top:10px;
+       right:130px;
+       width:900px;
+       min-height:250px;
+       //background:Red;
+       
+       h1{
+           color:black;
+           font:{
+               family: Yellowtail , Cursive;
+               size:120px;
+           }
+           text-shadow:10px 10px 20px rgba(0,0,0,0.3);
+       }
+
+       h3{
+           font:{
+            family: 'Poiret One', arial;
+            size:24px;
+            weight:bold;
+            
+           }
+           margin-top:-90px;
+           margin-right:100px;
+           text-align:center;
+           letter-spacing: 10px;
+       }
+
+       h5{
+           font-family: 'Poiret One', arial;
+           font-size:22px;
+           margin-top:-5px;
+           text-align:center;
+           margin-right:140px;
+       }
+
+    }
+
+}
+
+.bio-container{
+    
+    width:85%;
+    min-height:900px;
+    margin:20px auto;
+    
+    padding:20px;
+
+    .biography{
+       @include myheading;
+       margin-left:150px;
+       font-size:72px;
+       text-align:left;
+       letter-spacing: 30px;
+       
+       
+    }
+
+    .flex-container{
+        display:flex;
+    }
+
+    .content{
+        flex:2;
+        padding:15px;
+        margin-right:40px;
+        background-color:rgba(0,0,0,0.1);
+
+       h2{
+           @include myheading;
+           font-size:60px;
+           letter-spacing: 10px;
+           margin-left:10px;
+           text-align:center;
+           
+
+       }
+       
+        p{
+           
+            font-family:sans-serif;
+            font-size:22px;
+            text-align:left;;
+            line-height:136%;
+            
+            
+
+        }
+        img{
+            margin-bottom:10px;
+        }
+    }
+    .aside{
+        flex:1;
+        padding:15px;
+       
+        
+        background-color:rgba(0,0,0,0.1);
+
+        .socials{
+            display:flex;
+            
+            img{flex:1;margin-right:65px;}
+        }
+        
+        .music{
+            
+            audio{
+                width:100%;
+            }
+        
+        }
+
+        &>*{margin-top:25px;}
+
+    }
+    h2{
+        @include myheading;
+        font-size:60px;
+        letter-spacing: 10px;
+        margin-top:50px !important;
+        margin-left:10px;
+        text-align:center;
+    }
+    p{
+        font-size:22px;
+        font-family:sans-serif;
+        line-height:1.5;
+
+    }
+
+   
+
+}
+
+.discography{
+    max-width:1600px;
+    min-height:900px;
+    background: url('../images/wt1.jpg') repeat-y fixed;
+    background-size:cover;
+
+    &-title{
+        @include myheading;
+        font-size:120px;
+        color:white;
+        text-align: center;
+        position:relative;
+        top:50px;
+        padding:15px;
+        background:rgba(0,0,0,0.5);
+        
+        
+    }
+
+    &-content{
+        width:85%;
+        margin:0 auto;
+        min-height:900px;
+        background-color:rgba(0,0,0,0.7);
+        padding:40px;
+        color:white;
+        font-family:sans-serif;
+        display:flex;
+
+        em{
+          font-size:30px;
+          font-style:italic;
+        }
+        details{
+            margin-top:10px;
+            margin-left:20px;
+            
+            li{
+                margin-top:15px;
+                margin-left:30px;
+                list-style:none inside url('../images/music.png');
+
+               
+
+                a{
+                    color:white;
+                   
+                }
+            }
+           
+        }
+        &-wt{flex:1;}
+        &-indigo{flex:1;}
+    }
+    
+}
+
+.designer{
+    text-align: center;
+    font-size:16px;
+    color:white;
+    display:block;
+    padding:15px;
+    strong{
+        color:red;
+        font-size:24px;
+    }
+    a{
+        color:white;
+    }
+}
+
+@import "responsive";

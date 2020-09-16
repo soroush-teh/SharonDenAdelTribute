@@ -1,0 +1,219 @@
+@media screen and (max-width:1350px){
+    .titles-container{
+        
+        right:20px !important;
+        width:800px !important;
+       
+        
+    }
+    .top-container{
+        
+        background-size:cover;
+        background-position:left top;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .titles-container{
+           right:0px !important;
+        h1{
+        
+            font-size:110px !important;
+            
+        }
+    }
+}
+
+@media screen and (max-width:1050px){
+    .titles-container{
+        
+        width:700px !important;
+        
+        h1{
+            font-size:95px !important;
+        }
+        
+        
+    }
+    .bio-container{
+        width:100%;
+    }
+    .flex-container{
+        
+       flex-flow:column wrap;        
+       .content,.aside{
+           flex:1;width:100%;
+       }
+    }
+
+    .aside{
+       img{display:block;margin:25px auto;}
+    }
+
+    .biography{
+        
+        text-align:center !important;
+        margin:30px auto !important;
+
+    }
+    .discography .discography-title{
+        font-size:90px !important;
+    }
+  
+}
+
+
+@media screen and (max-width:850px) {
+
+    .discography{
+        background-position: center center;
+    }
+    .top-container{
+        background-size:cover;
+        background-position: left top;
+    }
+
+    .titles-container{
+        
+        width:600px !important;
+        
+        h1{
+            font-size:70px !important;
+            text-align:center;
+        }
+
+        h3{
+            margin-top:-55px !important;
+            font-size:20px !important;
+            position:relative;
+            left:6vw;
+        }
+        h5{
+            font-size: 20px !important;
+            position: relative;
+            left:7vw;
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+
+    .titles-container{
+        background:rgba(255,255,255,0.5);
+        width:90% !important;
+        top:250px !important;
+        right:5vw !important;
+       
+        h3{margin-left:20px;}
+        
+        
+    }
+}
+
+@media screen and (max-width:700px){
+    .titles-container{
+
+    
+        h3{margin-left:25px;}
+    
+    }
+}
+
+@media screen and (max-width:650px) {
+    .biography{
+        font-size:50px !important;
+    }
+
+    .discography .discography-title{
+        font-size:75px !important;
+    }
+    .discography .discography-content{
+        flex-direction:column-reverse;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .titles-container{
+
+        h3{margin-left:50px;font-size:16px !important;}
+    }
+}
+@media screen and (max-width:540px) {
+    .biography{
+        font-size:40px !important;
+        letter-spacing:10px !important;
+    }
+
+    .content h2{
+        
+        font-size:40px !important;
+        letter-spacing: 5px !important;
+    }
+
+    .titles-container{
+
+        h1{
+            font-size:60px !important;
+           
+        }
+        h3{
+ 
+        
+         
+           font-size:13px !important;
+        
+            position:relative;
+            top:22px;
+        }
+        h5{
+            position:relative;
+            top:30px;
+            left:50px !important;
+          
+        }
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+    
+
+    .titles-container{
+        h1{
+         font-size:55px !important;
+        }
+    }
+
+    .biography{
+        font-size:35px !important;
+    }
+ 
+    .aside .socials{
+        flex-direction:column;
+        img{
+            margin:25px auto !important;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:385px) {
+    .titles-container{
+        h1{
+          font-size:50px !important;
+        }
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    .titles-container{
+        h1{
+            font-size:45px !important;
+        }
+        
+    }
+} 
